@@ -1,6 +1,7 @@
 //import entities.Rectangle;
 
 //import entities.Employee;
+import entities.CurrencyConverter;
 import entities.Student;
 
 import java.util.Scanner;
@@ -39,17 +40,27 @@ public class Main {
 
 //      EX 3
 
-      Student student = new Student();
-      System.out.print("Student name: ");
-      student.name = sc.nextLine();
-      System.out.print("Grade One: ");
-      student.gradeOne = sc.nextDouble();
-      System.out.print("Grade Two: ");
-      student.gradeTwo = sc.nextDouble();
-      System.out.print("Grade Three: ");
-      student.gradeThree = sc.nextDouble();
+//      Student student = new Student();
+//      System.out.print("Student name: ");
+//      student.name = sc.nextLine();
+//      System.out.print("Grade One: ");
+//      student.gradeOne = sc.nextDouble();
+//      System.out.print("Grade Two: ");
+//      student.gradeTwo = sc.nextDouble();
+//      System.out.print("Grade Three: ");
+//      student.gradeThree = sc.nextDouble();
+//
+//      System.out.print(student);
 
-      System.out.print(student);
+//      EX 4
+
+      CurrencyConverter money = new CurrencyConverter();
+
+      System.out.print("What is the dollar price? ");
+      money.dollarPrice = sc.nextDouble();
+      System.out.print("How many dollars will be bought? ");
+      money.dollarsToBuy = sc.nextDouble();
+      System.out.printf("Amount to be paid in reais = %.2f", money.convertMoney());
 
 
       sc.close();
